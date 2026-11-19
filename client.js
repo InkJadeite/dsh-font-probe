@@ -327,6 +327,7 @@ window.__ModuleLoader__.load({
       const firstLineIndent = metricValue(state.firstLineIndent)
       if (firstLineIndent > 0) {
         metricRules.push(`${MD} p { text-indent: ${firstLineIndent}em !important; }`)
+        metricRules.push(`${MD} p * { text-indent: initial }`)
       }
 
       /* ---------- 字重 ----------
